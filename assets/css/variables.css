@@ -43,6 +43,15 @@
   --stud-size: 24px;
   --brick-radius: 4px;
   --brick-height: 4px;
+  
+  /* Z-Index Layers */
+  --z-background: -1;
+  --z-base: 1;
+  --z-navbar: 100;
+  --z-dropdown: 200;
+  --z-overlay: 500;
+  --z-modal: 1000;
+  --z-tooltip: 2000;
 
   /* Transitions */
   --transition-fast: 150ms ease;

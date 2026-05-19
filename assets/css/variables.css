@@ -1,0 +1,64 @@
+/* ============================================
+   LEGO PORTFOLIO — DESIGN TOKENS
+   ============================================ */
+
+:root {
+  /* Lego Colour Palette */
+  --lego-yellow: #FFD700;
+  --lego-red: #C91A09;
+  --lego-blue: #006DB7;
+  --lego-black: #1a1a1a;
+  --lego-white: #f5f5f0;
+  --lego-dark-blue: #1a1a2e;
+  --lego-grey: #e0e0d8;
+
+  /* Light Mode (default) */
+  --bg-primary: #f5f5f0;
+  --bg-secondary: #e8e8e0;
+  --bg-card: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555550;
+  --accent-primary: var(--lego-yellow);
+  --accent-secondary: var(--lego-red);
+  --accent-tertiary: var(--lego-blue);
+  --border-color: #d0d0c8;
+  --stud-color: rgba(0, 0, 0, 0.08);
+  --shadow: 0 4px 0px rgba(0,0,0,0.2);
+  --brick-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-xxl: 8rem;
+
+  /* Lego brick dimensions */
+  --stud-size: 24px;
+  --brick-radius: 4px;
+  --brick-height: 4px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-med: 300ms ease;
+  --transition-slow: 600ms ease;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-card: #0f3460;
+  --text-primary: #f5f5f0;
+  --text-secondary: #a0a0b0;
+  --border-color: #2a2a4a;
+  --stud-color: rgba(255, 255, 255, 0.05);
+  --shadow: 0 4px 0px rgba(0,0,0,0.5);
+  --brick-shadow: 4px 4px 0px rgba(0,0,0,0.5);
+}

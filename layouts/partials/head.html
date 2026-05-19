@@ -27,5 +27,5 @@
 <link rel="icon" type="image/png" href="{{ "images/favicon.png" | relURL }}" />
 
 <!-- Styles -->
-{{ $css := resources.Get "css/main.css" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+{{ $css := resources.Get "css/main.scss" | toCSS | minify }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" />

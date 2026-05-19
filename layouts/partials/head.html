@@ -1,0 +1,31 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Primary Meta -->
+<title>{{ if .IsHome }}Roja Joshi — Data Scientist{{ else }}{{ .Title }} | Roja Joshi{{ end }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}Data scientist building insights from the ground up. Final-year student at RMIT University, Melbourne.{{ end }}" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Roja Joshi" />
+<meta name="theme-color" content="#FFD700" />
+
+<!-- Open Graph (for link previews on LinkedIn, Slack etc) -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ if .IsHome }}Roja Joshi — Data Scientist{{ else }}{{ .Title }} | Roja Joshi{{ end }}" />
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}Data scientist building insights from the ground up.{{ end }}" />
+<meta property="og:image" content="{{ "images/og-image.png" | absURL }}" />
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ "images/favicon.png" | relURL }}" />
+
+<!-- Styles -->
+{{ $css := resources.Get "css/main.css" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />

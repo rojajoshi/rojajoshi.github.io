@@ -298,3 +298,22 @@
   outline: 3px solid var(--accent-primary);
   outline-offset: 3px;
 }
+
+/* === SKIP LINK (accessibility) === */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  background: var(--accent-primary);
+  color: var(--lego-black);
+  padding: 0.5rem 1rem;
+  border-radius: var(--brick-radius);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  z-index: var(--z-tooltip);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-md);
+}

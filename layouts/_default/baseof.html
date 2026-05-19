@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="stud-grid">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+  {{ partial "header.html" . }}
+
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <!-- Theme toggle script runs first to prevent flash -->
+  <script src="{{ "js/theme-toggle.js" | relURL }}"></script>
+
+  <!-- Scroll to top behaviour -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const scrollBtn = document.getElementById('scroll-top');
+
+        if (!scrollBtn) return;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+            scrollBtn.classList.add('visible');
+            } else {
+            scrollBtn.classList.remove('visible');
+            }
+        });
+
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+        });
+        });
+  </script>
+
+</body>
+</html>

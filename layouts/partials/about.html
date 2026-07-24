@@ -1,0 +1,45 @@
+<section class="section" id="about">
+  <div class="container">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-grid">
+
+      <!-- Left: Text -->
+      <div class="about-text">
+        <p>
+          I'm a final-year Data Science student at RMIT University, Melbourne,
+          with a passion for turning messy, complex data into clear and meaningful stories.
+        </p>
+        <p>
+          My approach to data science is a lot like Lego — I love taking many small,
+          seemingly unrelated pieces and building them into something useful and beautiful.
+          Whether it's a Power BI dashboard, a machine learning model, or a data pipeline,
+          I care deeply about the craft.
+        </p>
+        <p>
+          When I'm not wrangling data, you'll find me exploring Melbourne, learning something
+          new, or thinking about how to make complex ideas simple.
+        </p>
+
+        <div class="about-buttons">
+          <a href="/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+
+      <!-- Right: Facts -->
+      <div class="about-facts">
+        {{ range site.Data.facts }}
+        <div class="fact-card card">
+          <span class="fact-emoji">{{ .emoji }}</span>
+          <p class="fact-text">{{ .fact }}</p>
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</section>

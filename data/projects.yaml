@@ -1,0 +1,27 @@
+- title: "Victorian Waste Management Dashboard"
+  description: "Power BI dashboard analysing waste trends across 79 Victorian councils with time-series forecasting and risk assessment. Built for Deloitte Australia."
+  tags: ["Power BI", "DAX", "Forecasting", "Python"]
+  github: ""
+  demo: ""
+  featured: false
+
+- title: "Bank Churn Prediction"
+  description: "Gradient Boosting model predicting customer churn across 10,000 customers with quantified business impact analysis."
+  tags: ["Python", "scikit-learn", "Gradient Boosting"]
+  github: "https://github.com/rojajoshi/bank-customer-churn-analysis"
+  demo: ""
+  featured: false
+
+- title: "Australian Housing Affordability"
+  description: "Comprehensive analysis of housing affordability trends across 8 Australian cities using statistical modelling and visualisation."
+  tags: ["R", "ggplot2", "Statistical Analysis"]
+  github: "https://github.com/rojajoshi/australian-housing-affordability"
+  demo: ""
+  featured: false
+
+- title: "Orbital Debris Dashboard"
+  description: "Live R Shiny dashboard visualising NASA orbital debris data with interactive filtering and real-time updates."
+  tags: ["R", "Shiny", "NASA API", "Visualisation"]
+  github: "https://github.com/rojajoshi/orbital-debris-dashboard"
+  demo: "https://github.com/rojajoshi"
+  featured: false

@@ -1,0 +1,19 @@
+- category: "Languages"
+  icon: "⬛"
+  skills: ["Python", "R", "SQL", "JavaScript"]
+
+- category: "Data & ML"
+  icon: "⬛"
+  skills: ["scikit-learn", "PyTorch", "VADER", "Prophet", "pandas", "numpy"]
+
+- category: "Visualisation"
+  icon: "⬛"
+  skills: ["Power BI", "DAX", "R Shiny", "ggplot2", "Matplotlib"]
+
+- category: "Databases"
+  icon: "⬛"
+  skills: ["MongoDB", "MySQL", "PostgreSQL"]
+
+- category: "Tools"
+  icon: "⬛"
+  skills: ["Git", "Hugo", "Node.js", "Express", "VS Code", "Overleaf"]
